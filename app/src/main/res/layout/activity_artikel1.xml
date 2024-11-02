@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbaar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Gambar Ayam Bakar -->
+
+            <!-- Judul -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="Gambar Ayam Bakar Bumbu Bali"
+                android:elevation="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ayam_bakar_bumbu_bali" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Kangen masakan ibu. Jadi, coba bikin resep sendiri."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <!-- Bahan-bahan -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Bahan-bahan:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:layout_marginBottom="16dp"
+                android:text="- 1/2 kg ayam dipotong-potong\n- 1 buah jeruk nipis untuk melumuri ayam\n- 5 lembar daun jeruk\n- 4 batang serai memarkan\n- 3 sdm kecap manis\n- 1 sdm air asam jawa\n- 200 ml air kelapa (bisa air biasa)"
+                android:textSize="14sp" />
+
+            <!-- Bumbu yang dihaluskan -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Bumbu yang dihaluskan:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="- 10 buah cabe merah\n- 8 buah cabe rawit merah\n- 10 siung bawang merah\n- 4 siung bawang putih\n- 1 sdt terasi bakar\n- 2 ruas kunyit bakar\n- 1 ruas kencur\n- 4 butir kemiri sangrai"
+                android:textSize="14sp" />
+
+            <!-- Langkah-langkah -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Langkah (60 menit):"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="179dp"
+                android:layout_marginBottom="16dp"
+                android:text="1. Lumuri ayam dengan air jeruk nipis dan garam, diamkan 10 menit dan cuci. Tumis bumbu halus, tambahkan daun jeruk, serai masak hingga harum.\n\n2. Masukkan ayam lalu aduk, masukkan air, air asam jawa, kecap, gula, garam, tutup dengan panci ungkep sambil sesekali diaduk hingga air susut.\n\n3. Panggang ayam sambil dioles bumbu. Siap dihidangkan."
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

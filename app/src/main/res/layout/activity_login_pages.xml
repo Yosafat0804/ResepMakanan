@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- Header Image -->
+
+    <!-- LinearLayout containing Title, Subtitle, and Inputs -->
+    <ImageView
+        android:id="@+id/image_header"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loginpage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/centered_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toBottomOf="@id/image_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Title TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESMAI"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <!-- Subtitle TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kumpulan Resep Makanan Indonesia"
+            android:textColor="@color/text_clr"
+            android:layout_marginTop="5dp" />
+
+        <!-- Username/Email EditText -->
+        <EditText
+            android:id="@+id/edit_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/person"
+            android:paddingLeft="20dp"
+            android:hint="Email or Username"
+            android:textColor="@color/clr_light"
+            android:textStyle="bold"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_edit_text_blue_border" />
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/edit_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:paddingLeft="20dp"
+            android:hint="Password"
+            android:textColor="@color/clr_light"
+            android:inputType="numberPassword"
+            android:textStyle="bold"
+            android:background="@drawable/bg_edit_text_blue_border" />
+
+        <!-- Forgot Password TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"
+            android:onClick="clickForgot"
+            android:text="@string/Forget_password"
+            android:textColor="@color/text_clr" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/text_view_2"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn_login"
+            android:onClick="clickLogin"
+            android:text="@string/Login"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Bottom LinearLayout for Registration Prompt -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak Punya Akun?"
+            android:textColor="@color/text_clr"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar sebagai pengguna baru "
+                android:textColor="@color/text_clr" />
+
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar"
+                android:textColor="@color/clr_light" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

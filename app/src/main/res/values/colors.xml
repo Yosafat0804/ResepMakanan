@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#90be6d</color>
+    <color name="colorPrimaryDark">#90be6d</color>
+    <color name="colorAccent">#37371f</color>
+    <color name="coloritem">#ea9010</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_clr">#37371f</color>
+    <color name="clr_light">#5e60ce</color>
+    <color name="clr_dark_blue">#1E5EFF</color>
+    <color name="clr_google_btn">#f14436</color>
+    <color name="clr_fb_btn">#385c8e</color>
+</resources>
